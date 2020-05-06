@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvFigures"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Figures"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rbGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbTriangle"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Triangle" />
+
+        <RadioButton
+            android:id="@+id/rbSquare"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Square" />
+
+        <RadioButton
+            android:id="@+id/rbRectangle"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Rectangle" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvFind"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Find:"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/cbArea"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Area"
+        android:onClick="selectItem"/>
+
+    <CheckBox
+        android:id="@+id/cbPerimeter"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Perimeter"
+        android:onClick="selectItem"/>
+
+    <TextView
+        android:id="@+id/tvSelected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You selected:" />
+
+    <TextView
+        android:id="@+id/final_par"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parameters:" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="15dp"
+        android:text="Find"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</LinearLayout>
