@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/checkbox_fragment"
+        android:name="com.example.lab3.FragmentOne"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:layout="@layout/fragment_one" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/order_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="startCalc"
+            android:text="@string/order_label" />
+
+        <Button
+            android:id="@+id/show_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:onClick="showResults"
+            android:text="@string/show_data" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/results_fragment"
+        android:name="com.example.lab3.FragmentTwo"
+        android:layout_width="420dp"
+        android:layout_height="80dp"
+        tools:layout="@layout/fragment_two" />
+
+</LinearLayout>
